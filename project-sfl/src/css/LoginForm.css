@@ -1,0 +1,23 @@
+.outer-container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+  .form-background{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    background-color: #FFF
+  }
+
+  .container{
+    width:7rem;
+    left:50%;
+    display: inline-block
+  }

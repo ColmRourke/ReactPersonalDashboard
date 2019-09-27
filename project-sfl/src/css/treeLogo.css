@@ -1,0 +1,133 @@
+.tree {
+    /* height: auto; */
+    /* width: 300px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 0;
+    bottom: 30px;
+  }
+  .tree .leaves {
+    z-index: 1;
+    animation-delay: 0.5s;
+    animation-duration: 1s;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 100px 100px 100px;
+    border-radius: 30%;
+    border-color: transparent transparent #6B8E23 transparent;
+    position: relative;
+    bottom: 40px;
+  }
+  .tree .leaves:before {
+    content: " ";
+    border-style: solid;
+    border-width: 0 65px 100px 65px;
+    border-radius: 30%;
+    border-color: transparent transparent #6B8E23 transparent;
+    position: absolute;
+    left: -65px;
+    top: -100px;
+  }
+  .tree .leaves:after {
+    content: " ";
+    border-style: solid;
+    border-width: 0 85px 100px 85px;
+    border-radius: 30%;
+    border-color: transparent transparent #6B8E23 transparent;
+    position: absolute;
+    left: -85px;
+    top: -50px;
+  }
+  .tree .trunk {
+    z-index: 0;
+    width: 100px;
+    height: 50px;
+    background-color: #8B4513;
+    position: absolute;
+    bottom: 0px;
+  }
+   .container2{
+    width:5em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+  }
+  
+  #tick{
+    animation:show 2s;
+  }
+  .leaf{
+    opacity:0;
+    animation: move 2s ease-in-out normal infinite;
+  }
+  #leaf-1{
+     animation-delay:1s;
+  }
+  #leaf-2{
+     animation-delay:1.15s;
+  }
+  #leaf-3{
+     animation-delay:1.65s;
+  }
+  #leaf-4{
+     animation-delay:1.25s;
+  }
+  #leaf-5{
+     animation-delay:1.5s;
+  }
+  #leaf-6{
+     animation-delay:1.75s;
+  }
+  #leaf-7{
+     animation-delay:2s;
+  }
+  #leaf-8{
+     animation-delay:2.25s;
+  }
+  #leaf-9{
+     animation-delay:2.5s;
+  }
+  #leaf-10{
+     animation-delay:2.75s;
+  }
+  #leaf-11{
+     animation-delay:3s;
+  }
+  #leaf-12{
+     animation-delay:3.25s;
+  }
+  #leaf-13{
+     animation-delay:3.5s;
+  }
+  #leaf-14{
+     animation-delay:3.75s;
+  }
+  #leaf-15{
+     animation-delay:4s;
+  }
+  
+  @keyframes move {
+    0%{
+      opacity:0;
+    }
+    50%{
+      opacity:1;
+    }
+    100%{
+      opacity:0;
+    }
+  }
+  @keyframes show{
+    from{
+      opacity:0;
+    }
+    to{
+      opacity:1;
+    }
+  }
+    
